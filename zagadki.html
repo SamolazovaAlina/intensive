@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<script>
+var score = 0;
+function askQuestion(question,answer){
+	var userAnswer = prompt(question);
+	if(userAnswer==answer){
+		alert("Поздравляем! Угадали!");
+		score++;
+	}else {
+		alert("К сожалению не угадали");
+	}
+}
+askQuestion("Летом серый,а зимой белый","заяц");
+askQuestion("Сто одежек и все без застежек","капуста");
+alert("Правильных ответов: "+score);
+</script>

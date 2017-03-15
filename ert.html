@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+<script>
+alert ("Добро пожаловать!Мы поможем вам рассчитать ваш вклад");
+	var summa = parseInt(prompt("Сумма вклада,тыс"));
+	var stavka = parseInt(prompt("Годовой процент,%"));
+	var year = parseInt(prompt("Срок вклада,лет"));
+	
+	
+for (var i = 1;i<= year;i++){
+summa=summa+summa*stavka/100;
+	alert("Количество лет: "+i+" "+"Сумма: "+Math.floor(summa));
+	}
+	alert("До новых встреч!");
+</script>
